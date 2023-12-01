@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sim</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        video{
+            max-width: 100%;
+            width: 350px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <video id="video" controls autoplay>
+        <source src="WhatsApp Video 2023-12-01 at 14.41.46.mp4" type="video/mp4">
+    </video>
+</body>
+<script>
+
+    window.addEventListener("load", function ()
+    {
+        let video = window.document.querySelector("#video");
+        video.play();
+        video.loop = true;
+    });
+ 
+ </script>
+</html>
